@@ -24,7 +24,7 @@ namespace TrelloAPI
         {
             services.AddApplication();
             services.ConfigureApplicationSettings(this.Configuration);
-            services.AddTransient<IBoardsService, BoardsService>();
+            services.AddHttpClient<IBoardsService, BoardsService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

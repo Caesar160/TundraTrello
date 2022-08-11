@@ -13,14 +13,15 @@ namespace Tundra.Trello.Services
     public class BoardsService : IBoardsService
     {
         private readonly TrelloSettings settings;
+        private readonly HttpClient client;
 
-        public BoardsService(IOptions<TrelloSettings> settings)
+        public BoardsService(IOptions<TrelloSettings> settings, HttpClient client)
         {
+            this.client = client;
             this.settings = settings.Value;
         }
         public async Task<Card> CreateCardAsync(string cardName, string cardDescription)
         {
-            var client = new HttpClient();
             client.BaseAddress = new Uri(settings.BaseUrl);
             var card = new Card
             {
