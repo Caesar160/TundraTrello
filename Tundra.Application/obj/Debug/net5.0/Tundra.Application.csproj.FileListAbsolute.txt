@@ -22,3 +22,6 @@ E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\obj\Debug\net5.0\Tundra.
 E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\obj\Debug\net5.0\refint\Tundra.Application.dll
 E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\obj\Debug\net5.0\Tundra.Application.pdb
 E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\obj\Debug\net5.0\ref\Tundra.Application.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\bin\Debug\net5.0\Tundra.Settings.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\bin\Debug\net5.0\Tundra.Settings.pdb
+E:\WORK\learning\TrelloAPI\TrelloAPI\Tundra.Application\obj\Debug\net5.0\Tundra.Application.csproj.CopyComplete

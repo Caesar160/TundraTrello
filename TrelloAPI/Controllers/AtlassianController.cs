@@ -1,43 +1,28 @@
 ﻿using System.Threading.Tasks;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Tundra.Application.Aggregates.Cards.Commands.CreateCard;
 using Tundra.Application.Interfaces;
 
 namespace Tundra.Presentation.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AtlassianController : ControllerBase
+    public class AtlassianController : BaseApiController
     {
-        private readonly IMediator _mediator;
         private readonly IBoardsService _boards;
-        public AtlassianController(IBoardsService boards, IMediator mediator)
+
+        public AtlassianController(IBoardsService boards)
         {
             _boards = boards;
-            _mediator = mediator;
-        }
-    }
-    
-        [HttpGet("get-boards")]
-        public async Task<string> GetBoardsAsync()
-        {
-            var result = await _boards.GetBoardsAsync();
-            return result;
-        }
-
-        [HttpGet("get-lists")]
-        public async Task<string> GetBoardListsAsync(string boardId)
-        {
-            var result = await _boards.GetColumnsAsync(boardId);
-            return result;
         }
 
         [HttpPost("create-card")]
-        public async Task<IActionResult> CreateCardAsync(string cardName, string cardDescription, string columnId)
+        public async Task<IActionResult> CreateCardAsync([FromBody] CreateCardCommand command)
         {
-            var result = await _boards.CreateCardAsync(cardName, cardDescription, columnId);
+            var result = await this.Mediator.Send(command);
             return Ok();
         }
     }
 }
+    
+      

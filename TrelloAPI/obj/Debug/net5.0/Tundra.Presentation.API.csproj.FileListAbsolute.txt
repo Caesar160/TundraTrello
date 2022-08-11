@@ -76,3 +76,6 @@ E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\obj\Debug\net5.0\Tundra.Presentat
 E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\obj\Debug\net5.0\Tundra.Presentation.API.genruntimeconfig.cache
 E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\obj\Debug\net5.0\ref\Tundra.Presentation.API.dll
 E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\MediatR.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\MediatR.Contracts.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

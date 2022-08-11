@@ -189,7 +189,8 @@
         "dependencies": {
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "Tundra.Settings": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Tundra.Application.dll": {}

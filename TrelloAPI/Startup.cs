@@ -7,7 +7,6 @@ using Microsoft.OpenApi.Models;
 using Tundra.Application.Interfaces;
 using Tundra.Presentation.API.Extensions.ServiceCollectionExtensions;
 using Tundra.Trello.Services;
-using MediatR;
 using Tundra.Application;
 
 namespace TrelloAPI

@@ -56,6 +56,16 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "Tundra.Settings/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Tundra.Settings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tundra.Settings.dll": {}
+        }
       }
     }
   },
@@ -154,13 +164,19 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Tundra.Settings/1.0.0": {
+      "type": "project",
+      "path": "../TrelloAPI.Settings/Tundra.Settings.csproj",
+      "msbuildProject": "../TrelloAPI.Settings/Tundra.Settings.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
-      "Newtonsoft.Json >= 13.0.1"
+      "Newtonsoft.Json >= 13.0.1",
+      "Tundra.Settings >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -194,7 +210,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\WORK\\learning\\TrelloAPI\\TrelloAPI\\TrelloAPI.Settings\\Tundra.Settings.csproj": {
+              "projectPath": "E:\\WORK\\learning\\TrelloAPI\\TrelloAPI\\TrelloAPI.Settings\\Tundra.Settings.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
