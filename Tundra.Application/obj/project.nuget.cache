@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sCSmg8/bo6hCZNmpRvOSPNr8iZ6w9c06xZqK036jr97V+91L2lB1csYOBmG7GYVTzb4DccaTN+v4XIw0jKi7pg==",
+  "dgSpecHash": "30L5XfxbNagVlkbq1PmYz4EbrMO0r1btSJBY7oWS2aQsW12FvvtQfO+z3DlNE8jO06dIAGERvWfuFTlKOqFpxw==",
   "success": true,
   "projectFilePath": "E:\\WORK\\learning\\TrelloAPI\\TrelloAPI\\Tundra.Application\\Tundra.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yauheni\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\yauheni\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\yauheni\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\yauheni\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []

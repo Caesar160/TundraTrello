@@ -7,6 +7,8 @@ using Microsoft.OpenApi.Models;
 using Tundra.Application.Interfaces;
 using Tundra.Presentation.API.Extensions.ServiceCollectionExtensions;
 using Tundra.Trello.Services;
+using MediatR;
+using Tundra.Application;
 
 namespace TrelloAPI
 {
@@ -21,6 +23,7 @@ namespace TrelloAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplication();
             services.ConfigureApplicationSettings(this.Configuration);
             services.AddTransient<IBoardsService, BoardsService>();
             services.AddControllers();

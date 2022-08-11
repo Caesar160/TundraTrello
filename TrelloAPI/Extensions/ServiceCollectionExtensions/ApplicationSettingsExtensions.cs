@@ -9,8 +9,6 @@
         internal static IServiceCollection ConfigureApplicationSettings(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<TrelloSettings>(configuration.GetSection("ApiSettings"));
-            
-
             return services;
         }
     }
