@@ -8,6 +8,7 @@ using Tundra.Application.Interfaces;
 using Tundra.Presentation.API.Extensions.ServiceCollectionExtensions;
 using Tundra.Trello.Services;
 using Tundra.Application;
+using Tundra.Application.Mappings;
 
 namespace TrelloAPI
 {
@@ -25,6 +26,7 @@ namespace TrelloAPI
             services.AddApplication();
             services.ConfigureApplicationSettings(this.Configuration);
             services.AddHttpClient<IBoardsService, BoardsService>();
+            services.AddAutoMapper(typeof(MappingProfile));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

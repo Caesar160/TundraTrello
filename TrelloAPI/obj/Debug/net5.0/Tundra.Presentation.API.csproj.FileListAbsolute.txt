@@ -79,3 +79,5 @@ E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\Microsoft.Extens
 E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\MediatR.dll
 E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\MediatR.Contracts.dll
 E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\AutoMapper.dll
+E:\WORK\learning\TrelloAPI\TrelloAPI\TrelloAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

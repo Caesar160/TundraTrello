@@ -1,26 +1,24 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tundra.Application.Aggregates.Cards.Commands.CreateCard;
-using Tundra.Application.Interfaces;
 
 namespace Tundra.Presentation.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AtlassianController : BaseApiController
+    public class CardsController : BaseApiController
     {
-        private readonly IBoardsService _boards;
-
-        public AtlassianController(IBoardsService boards)
+        public CardsController()
         {
-            _boards = boards;
         }
 
-        [HttpPost("create-card")]
+        [HttpPost("card")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> CreateCardAsync([FromBody] CreateCardCommand command)
         {
             var result = await this.Mediator.Send(command);
-            return Ok();
+            return Ok(result);
         }
     }
 }

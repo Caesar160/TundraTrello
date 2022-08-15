@@ -8,7 +8,6 @@ namespace Tundra.Presentation.API.Controllers
     public abstract class BaseApiController : ControllerBase
     {
         private ISender mediator;
-
         protected ISender Mediator => this.mediator ??= this.HttpContext.RequestServices.GetService<ISender>();
     }
 }

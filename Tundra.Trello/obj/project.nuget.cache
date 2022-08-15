@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "RsVFjqMzRENgOh611dNbabjWmNtox0rVNPh9iCKE7ETvL1fykUgSBrgZHsxy+JAnJL1eL7nKY+VT6wOV1/J5dw==",
+  "dgSpecHash": "TN9K6G5vaeUJBCKAfBxi3WG00+ukm7ZieF19biN9WrdRL1dCQ0xnjdRtEW4zTd0KLJFQh0aujt/GLwJk3SWTfg==",
   "success": true,
   "projectFilePath": "E:\\WORK\\learning\\TrelloAPI\\TrelloAPI\\Tundra.Trello\\Tundra.Trello.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yauheni\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\yauheni\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\yauheni\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",

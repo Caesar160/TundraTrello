@@ -5,6 +5,6 @@ namespace Tundra.Application.Interfaces
 {
     public interface IBoardsService
     {
-        Task<Card> CreateCardAsync(string cardName, string cardDescription);
+        Task<Card> CreateCardAsync(Card card);
     }
 }
