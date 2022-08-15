@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System;
 using System.Net.Http;
@@ -19,15 +20,15 @@ namespace Tundra.Trello.Services
         {
             this.client = client;
             this.settings = settings.Value;
+            client.BaseAddress = new Uri(settings.Value.BaseUrl);
         }
-        public async Task<Card> CreateCardAsync(Card card)
+
+        public async Task CreateCardAsync(Card card)
         {
-            client.BaseAddress = new Uri(settings.BaseUrl);
             var stringRequest = JsonConvert.SerializeObject(card);
             var requestContent = new StringContent(stringRequest, Encoding.UTF8, "application/json");
-            var response = await client.PostAsync($"cards?idList={settings.ColumnId}&key={settings.ApiKey}&token={settings.ApiToken}", requestContent);
-            var body = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<Card>(body);
+            await client.PostAsync($"cards?idList={settings.ColumnId}&key={settings.ApiKey}&token={settings.ApiToken}", requestContent);
+            return;
         }
     }
 }

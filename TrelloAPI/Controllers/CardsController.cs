@@ -13,14 +13,12 @@ namespace Tundra.Presentation.API.Controllers
         {
         }
 
-        [HttpPost("card")]
+        [HttpPost("new")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> CreateCardAsync([FromBody] CreateCardCommand command)
         {
-            var result = await this.Mediator.Send(command);
-            return Ok(result);
+            await this.Mediator.Send(command);
+            return Ok();
         }
     }
 }
-    
-      

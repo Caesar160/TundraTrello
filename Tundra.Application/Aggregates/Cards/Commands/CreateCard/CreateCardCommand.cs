@@ -8,7 +8,7 @@ namespace Tundra.Application.Aggregates.Cards.Commands.CreateCard
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("desc")]
+        [JsonProperty("description")]
         public string Description { get; set; }
     }
 }

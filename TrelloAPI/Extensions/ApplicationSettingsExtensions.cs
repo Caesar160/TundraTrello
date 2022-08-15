@@ -1,4 +1,4 @@
-﻿namespace Tundra.Presentation.API.Extensions.ServiceCollectionExtensions
+﻿namespace Tundra.Presentation.API.Extensions
 {
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;

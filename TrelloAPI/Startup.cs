@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Tundra.Application.Interfaces;
-using Tundra.Presentation.API.Extensions.ServiceCollectionExtensions;
+using Tundra.Presentation.API.Extensions;
 using Tundra.Trello.Services;
 using Tundra.Application;
 using Tundra.Application.Mappings;
