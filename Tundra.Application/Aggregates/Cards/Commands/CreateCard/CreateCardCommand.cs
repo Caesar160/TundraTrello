@@ -15,11 +15,4 @@ namespace Tundra.Application.Aggregates.Cards.Commands.CreateCard
         public string Description { get; set; }
     }
 }
-public class CreateCardCommandValidator : AbstractValidator<CreateCardCommand>
-{
-    public CreateCardCommandValidator()
-    {
-        RuleFor(x => x.Name).NotEmpty();
-        RuleFor(x => x.Description).NotEmpty();
-    }
-}
+

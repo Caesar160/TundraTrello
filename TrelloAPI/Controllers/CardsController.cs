@@ -13,17 +13,16 @@ namespace Tundra.Presentation.API.Controllers
     [ApiController]
     public class CardsController : BaseApiController
     {
-        private readonly IValidator<CreateCardCommand> validator;
 
-        public CardsController(IValidator<CreateCardCommand> validator)
+        public CardsController()
         {
-            this.validator = validator;
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> CreateCardAsync([FromBody] CreateCardCommand command)
         {
+            var validator = new CreateCardCommandValidator();
             ValidationResult result = await validator.ValidateAsync(command);
             if (result.IsValid)
             {
