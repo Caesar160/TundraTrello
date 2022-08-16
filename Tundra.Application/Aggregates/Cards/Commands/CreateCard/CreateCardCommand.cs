@@ -1,5 +1,8 @@
-﻿using MediatR;
+﻿using FluentValidation;
+using MediatR;
 using Newtonsoft.Json;
+using Tundra.Application.Aggregates.Cards.Commands.CreateCard;
+using Tundra.Application.Models;
 
 namespace Tundra.Application.Aggregates.Cards.Commands.CreateCard
 {
@@ -10,5 +13,13 @@ namespace Tundra.Application.Aggregates.Cards.Commands.CreateCard
 
         [JsonProperty("description")]
         public string Description { get; set; }
+    }
+}
+public class CreateCardCommandValidator : AbstractValidator<CreateCardCommand>
+{
+    public CreateCardCommandValidator()
+    {
+        RuleFor(x => x.Name).NotEmpty();
+        RuleFor(x => x.Description).NotEmpty();
     }
 }

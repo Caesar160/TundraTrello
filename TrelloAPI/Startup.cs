@@ -9,6 +9,9 @@ using Tundra.Presentation.API.Extensions;
 using Tundra.Trello.Services;
 using Tundra.Application;
 using Tundra.Application.Mappings;
+using FluentValidation;
+using Tundra.Application.Models;
+using Tundra.Application.Aggregates.Cards.Commands.CreateCard;
 
 namespace TrelloAPI
 {
@@ -28,6 +31,7 @@ namespace TrelloAPI
             services.AddHttpClient<IBoardsService, BoardsService>();
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddControllers();
+            services.AddScoped<IValidator<CreateCardCommand>, CreateCardCommandValidator>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TrelloAPI", Version = "v1" });
