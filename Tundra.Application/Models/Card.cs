@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-using Newtonsoft.Json;
-using Tundra.Application.Models;
+﻿using Newtonsoft.Json;
 
 namespace Tundra.Application.Models
 {
